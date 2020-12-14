@@ -1,0 +1,24 @@
+{% extends "todo_app/base.html"%}
+{% block title %}
+About Page 
+{% endblock title %}
+
+{% block content %} 
+ <!--{% csrf_token %}-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                <center>TO-DO LIST</center>
+            </h1>
+            <p class="lead"><center>Burası</center></p>
+            <p class="lead"><center>About </center></p>
+            <p class="lead"><center>Sayfası</center></p>
+            <p class="lead"><center>Hosgeldiniz</center></p>
+            <p class="lead"><center>Efendim</center></p>
+            </br>
+            <div class="text-center">
+                <a class="btn btn-outline-success" href="{%url 'create' %}" role="button">Create TO-DO List</a>
+            </div>
+        </div>
+    </div>   
+{% endblock content %}
